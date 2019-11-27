@@ -1,0 +1,17 @@
+
+#bannar{
+  background-image: url("bannarbg.jpg"); 
+}
+#div2{
+  margin-left: 5px;
+  padding-left: 5px;
+  width:auto;
+  height:10%
+}
+
+img { 
+  width:100%;
+  min-height: 40%;
+  object-fit:cover;
+overflow: scroll;
+ }

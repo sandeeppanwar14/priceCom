@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Price Comparator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'price/css/stylesheet1.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#f7f5f7">
+<div class="jumbotron text-center" style="margin-bottom:0" id="bannar">
+  <h1>Price Comparator</h1>
+  <p>Save Time Save Money!</p> 
+</div>
+<div class="bar" style="height: 20px; background: #333">
+</div> 
+
+
+
+      {% for a,b in result %}
+      {% if a == 'first' %}
+      <div class = "row" id="div2">
+  
+      {% for c,v in b %}
+      <div class="col-sm-3">
+          <img src={{v.imgurl}}>
+          <div class="desc">
+            <a href={{v.url}}><h4 id="name">{{v.name}}<h4></a>
+            <h4>&#8377 {{ v.price }}<h4>
+            <h4>{{v.rating}}<h4>
+          <h4>{{ v.website}}</h4>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+      <div class="bar" style="height: 25px; background: #999",width='100%%'><h4 align='center'>Other</h4></div>
+      
+      
+
+      <div class = "row" id="div2">
+      {% elif a == 'second' %}
+
+      {% for c,v in b %}
+				<div class="col-sm-3">
+				<img src={{v.imgurl}}>
+				<div class="desc">
+				<a href={{v.url}}><h4 id="name">{{v.name}}<h4></a>
+				<h5>&#8377 {{ v.price }}<h5>
+        <h5>{{v.website}}</h5>
+				  </div>
+				</div>
+      {% endfor %}
+      </div>
+      {% endif %}
+      {% endfor %}
+
+</body>
+</html>
+
+
+
+
