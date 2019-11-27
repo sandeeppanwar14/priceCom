@@ -14,13 +14,6 @@ TEAM MEMBERS
 **********************************************************
 PROJECT NAME : PRICE COMPARATOR
 **********************************************************
-
-************************************************************
-github link: https://github.com/bansalapaar/price_comparator
-************************************************************
-
-
-***********************************************************
 MOTIVATION
 ***********************************************************
 
@@ -32,7 +25,7 @@ websites and informs the user about the best available deal.
 CONTRIBUTION OF TEAM MEMBERS
 **************************************************
 
- Sandeep Panwar: web scraping from flipkart, paytam mall,snapdeal
+ Sandeep Panwar: web scraping from flipkart, paytam mall,snapdeal,amazon,django
  Apaar Bansal: web development,intergration of code 
  Rishi Raj Singh: web scraping from amazon,front end 
 
